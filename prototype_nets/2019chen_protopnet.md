@@ -1,10 +1,12 @@
-Background. 
+## Background. 
 
-Contribution. 
+   
+
+## Contribution. 
 
    This is the first implementation of the protopnet, which provides an interpretable alternative to black box neural nets. 
 
-Model Inference. 
+## Model Inference. 
 
    1. A convolutional backbone that maps the original image to a latent space $f: \mathbb{R}^{224 \times 224 \times 3} \to \mathbb{R}^{D \times 7 \times 7}$. We can think of each image as being embedded as a set of $7 \times 7 = 49$ vectors in a $D$-dimensional space, called patches.
 
@@ -12,7 +14,7 @@ Model Inference.
 
    3. With this collection of all similarity scores, we use a fully connected layer to predict. the logits of the proper class. 
 
-Training. 
+## Training. 
 
    1. You are essentially training the backbone, prototype, and FC weights. 
 
@@ -24,6 +26,6 @@ Training.
 
    5. Loss is custom, with CE loss for the classifier along with ones for prototypes. Cluster loss tries to minimize the distances between each prototype and its nearest patch (for high confidence). Separation loss tries to maximize distances between a prototype of one class and all other prototypes of different classes, since different birds will have different features. 
 
-
+## Results
 
 

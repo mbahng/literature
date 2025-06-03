@@ -1,4 +1,4 @@
-Contribution. 
+## Contribution. 
 
    Training ProtoPnets is hard since there is no systematic way to do it. 
      - It introduces a new framework for implementing and training descendant models of ProtoPnet. 
@@ -8,7 +8,7 @@ Contribution.
      - New objective based off of accuracy and prototype quality. 
    Achieves SOTA accuracy. 
 
-Interface. 
+## Interface. 
 
    1. Every ProtoPnet can be divided into  
 
@@ -20,7 +20,7 @@ Interface.
     
    2. Remember that in almost (except for ProtoConcept) all variants, a projection/push step is performed during and at the end of training. 
 
-Prototype Metrics. 
+## Prototype Metrics. 
 
    1. **Sparsity**. Quantifies amount of unique prototypes used by a model. 
 
@@ -34,11 +34,11 @@ Prototype Metrics.
         v_{proto\_score} = \frac{v_{sparse} + v_{consist} + v_{stab}}{3}, \qquad objective = v_{acc} \cdot v_{proto\_score}
    $$
 
-Prototype-Aware Early Stopping 
+## Prototype-Aware Early Stopping 
 
    1. Patience is number of projection epochs without improvement. (?) 
 
-Results. 
+## Results. 
 
    1. They just take original ProtoPnet (and DeformableProtoPnet) and replace L2 distance with cosine similarity, which improves accuracy. This is why DeformableProtoPnet and TesNet is superior, since they already use cosine similarity. 
 

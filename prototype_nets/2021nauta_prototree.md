@@ -1,8 +1,8 @@
-Contribution. 
+## Contribution. 
 
    Extends the original ProtoPnet model by using a soft decision tree to classify rather than minimum distance. Outperforms original with only 10% of the number of prototypes. 
 
-Model Inference. 
+## Model Inference. 
 
    1. Take image $x$ with label $y$ and forward it through the CNN backabone $f(x) = z$. The latent embedding with the CNN is the same of output shape $(D, H, W)$ consisting of $HW$ patches of shape $(D, 1, 1)$. 
 
@@ -28,7 +28,7 @@ Model Inference.
         \hat{y}(x) = \sum_{\ell \in \mathcal{L}} \sigma(c_\ell) \cdot \pi_\ell (f(x))
    $$
 
-Training. 
+## Training. 
 
    1. The backpropagation process is straightforward since we have closed forms of the equation. Both the internal node prototypes $p$ and the backbone weights are trained according to CE.  
 
@@ -36,7 +36,7 @@ Training.
 
    3. Leaf nodes with uniform distributions are pruned. 
 
-Results. 
+## Results. 
 
     1. CUB-200-2011. ProtoPnet (79.2), Triplet Model (87.5), 5-Ensemble ProtoTree (87.2)
 
