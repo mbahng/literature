@@ -2,6 +2,8 @@
 
    CNNs are not very interpretable as in we don't know what these features represent in latent space. We would like to visualize them in image/pixel space at all layers to see how they evolve from simple to more complex features. 
 
+   [Slides](https://helper.ipam.ucla.edu/publications/gss2013/gss2013_11315.pdf) by Matt Zeiler for more reference. 
+
 ## Contribution 
 
    An upsampling layer that attempts to invert convolutional layers, called *deconvolutional layers*. Two warnings: 
