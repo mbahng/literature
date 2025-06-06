@@ -1,4 +1,4 @@
-## Contribution. 
+## Contribution
 
    Training ProtoPnets is hard since there is no systematic way to do it. 
      - It introduces a new framework for implementing and training descendant models of ProtoPnet. 
@@ -8,7 +8,7 @@
      - New objective based off of accuracy and prototype quality. 
    Achieves SOTA accuracy. 
 
-## Interface. 
+## Interface
 
    1. Every ProtoPnet can be divided into  
 

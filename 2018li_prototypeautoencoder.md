@@ -1,7 +1,8 @@
 ## Background. 
 
    Lots of post-hoc interpretations on neural nets. Want another source of interpretability. 
-
+[[2014szegedy_googlenet.pdf]]
+	
 ## Contribution
 
    Introduces an autoencoder based prototype network with a new prototype layer where each unit of that layer stores a weight vector that resembles an encoded training input. 
