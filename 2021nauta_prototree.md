@@ -1,5 +1,6 @@
+[[2021nauta_prototree.pdf]]
 #interpretable
-[[2019chen_protopnet]]
+Cites: [[2019chen_protopnet]]
 ## Contribution. 
 
    Extends the original ProtoPnet model by using a soft decision tree to classify rather than minimum distance. Outperforms original with only 10% of the number of prototypes. 
@@ -13,7 +14,7 @@
    3. With $p_n$, we compute the minimum distance between $p_n$ and all patches in $z$, and this distance determines to what extent the prototype $P$ is present anywhere in the image. This score influences the routing f the sample either right or left (but in a soft way so that it routes through both probabilistically). The probability of routing $z$ to right edge is defined 
 
    $$
-        p_{e(n, n.right)} (\tilde{z}) \coloneqq \exp(- \| z^\ast - p_n \| ), \qquad \tilde{z}^\ast \coloneqq \argmin_{\tilde{z} \in patches(z)} \| \tilde{z} - p_n \|
+        p_{e(n, n.right)} (\tilde{z}) \coloneqq \exp(- \| z^\ast - p_n \| ), \qquad \tilde{z}^\ast \coloneqq \arg \min_{\tilde{z} \in patches(z)} \| \tilde{z} - p_n \|
    $$   
    with of course $p_{e(n, n.left)} (\tilde{z}) \coloneqq 1 - p_{e(n, n.right)} (\tilde{z})$ 
 

@@ -1,4 +1,5 @@
-#interpretable
+[[2018li_prototypeautoencoder.pdf]]
+#interpretable #prototype
 ## Background. 
 
    Lots of post-hoc interpretations on neural nets. Want another source of interpretability. 

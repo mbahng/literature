@@ -3,5 +3,6 @@
   "tabSize": 2,
   "showLineNumber": true,
   "livePreview": true,
-  "showInlineTitle": true
+  "showInlineTitle": true,
+  "alwaysUpdateLinks": true
 }

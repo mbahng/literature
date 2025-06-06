@@ -1,6 +1,6 @@
+[[2013zeiler_understandingcnns.pdf]]
 #cnn #layer
-[[2010zeiler_deconvnets]]
-[[2011zeiler_adaptive_deconvnets]]
+[[2010zeiler_deconvnets]],  [[2011zeiler_adaptive_deconvnets]]
 
 ## Background 
 

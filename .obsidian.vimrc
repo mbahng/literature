@@ -8,4 +8,4 @@ vmap <C-k> 5k
 nmap m n 
 nmap n b 
 vmap n b 
-nmap dn db
+nnoremap dn db 

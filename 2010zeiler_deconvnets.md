@@ -1,11 +1,11 @@
+[[2010zeiler_deconvnets.pdf]]
 #architecture #cnn
 [[1998lecun_lenet]]
 ## Background 
 
-
    CNNs are not very interpretable as in we don't know what these features represent in latent space. We would like to visualize them in image/pixel space at all layers to see how they evolve from simple to more complex features. 
 
-   [Slides](https://helper.ipam.ucla.edu/publications/gss2013/gss2013_11315.pdf) by Matt Zeiler for more reference. 
+   [Slides](https://helper.ipam.ucla.edu/publications/gss2013/gss2013_11315.pdf) by Matt Zeiler for more reference. Apparently was too long ago to retrieve code from messaging him on LinkedIn. Also he did it in matlab. 
 
 ## Contribution 
 

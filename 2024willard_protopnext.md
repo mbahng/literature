@@ -1,8 +1,8 @@
+[[2024willard_protopnext.pdf]]
 #interpretable 
-[[2019chen_protopnet]]
-[[2021nauta_prototree]]
+# Background
 
-## Contribution
+# Contribution
 
    Training ProtoPnets is hard since there is no systematic way to do it. 
      - It introduces a new framework for implementing and training descendant models of ProtoPnet. 
@@ -12,19 +12,16 @@
      - New objective based off of accuracy and prototype quality. 
    Achieves SOTA accuracy. 
 
-## Interface
+# Interface
 
-   1. Every ProtoPnet can be divided into  
-
-      i) an embedding layer $f: \mathbb{R}^{C \times H \times W} \to \mathbb{R}^{D \times H^\prime \times W^\prime}$ mapping the image to a $D$-dimensional latent space of $HW$ patches, also called *perceptive fields*. 
-
-      ii) a prototype later $g: \mathbb{R}^{D \times H^\prime \times W^\prime} \to \mathbb{R}^{P \times H^{\prime\prime} \times W^{\prime\prime}}$ which computes the similarity of each of the $P$ prototypes to the input at each of the $H^{\prime\prime}$ by $W^{\prime\prime}$ center locations. (?)
-
-      iii) a class prediction head for the global classification logits $h: \mathbb{R}^{P \times H^{\prime\prime} \times W^{\prime\prime}} \to \mathbb{R}^K$. 
+Every ProtoPnet can be divided into  
+1. an embedding layer $f: \mathbb{R}^{C \times H \times W} \to \mathbb{R}^{D \times H^\prime \times W^\prime}$ mapping the image to a $D$-dimensional latent space of $HW$ patches, also called *perceptive fields*. 
+2. a prototype later $g: \mathbb{R}^{D \times H^\prime \times W^\prime} \to \mathbb{R}^{P \times H^{\prime\prime} \times W^{\prime\prime}}$ which computes the similarity of each of the $P$ prototypes to the input at each of the $H^{\prime\prime}$ by $W^{\prime\prime}$ center locations. (?)
+3. a class prediction head for the global classification logits $h: \mathbb{R}^{P \times H^{\prime\prime} \times W^{\prime\prime}} \to \mathbb{R}^K$. 
     
-   2. Remember that in almost (except for ProtoConcept) all variants, a projection/push step is performed during and at the end of training. 
+Remember that in almost (except for ProtoConcept) all variants, a projection/push step is performed during and at the end of training. 
 
-## Prototype Metrics. 
+# Prototype Metrics. 
 
    1. **Sparsity**. Quantifies amount of unique prototypes used by a model. 
 
@@ -38,14 +35,18 @@
         v_{proto\_score} = \frac{v_{sparse} + v_{consist} + v_{stab}}{3}, \qquad objective = v_{acc} \cdot v_{proto\_score}
    $$
 
-## Prototype-Aware Early Stopping 
+# Prototype-Aware Early Stopping 
 
    1. Patience is number of projection epochs without improvement. (?) 
 
-## Results. 
+# Results. 
 
    1. They just take original ProtoPnet (and DeformableProtoPnet) and replace L2 distance with cosine similarity, which improves accuracy. This is why DeformableProtoPnet and TesNet is superior, since they already use cosine similarity. 
 
    2. They do systematic Bayesian hyperparameter tuning. 
 
    3. Joint optimization (optimizing both accuracy and protoscore) substantially improves interpretability metrics without much cost to accuracy. 
+
+# Citations
+[[2019chen_protopnet]]
+[[2021nauta_prototree]]

@@ -1,6 +1,6 @@
-#interpretable 
-[[2018li_prototypeautoencoder]]
-
+[[2019chen_protopnet.pdf]]
+#interpretable #prototype
+[[2018li_prototypeautoencoder]],  [[2013krause_stanfordcars]], [[2010wah_cub200-2011]]
 # Background. 
 
 # Contribution. 
