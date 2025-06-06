@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "a4a33d3750f361d8",
+        "id": "38df452d19db7d87",
         "type": "tabs",
         "children": [
           {
-            "id": "f03cffc225b01582",
+            "id": "c828308928824a43",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -74,7 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 437.5
+    "width": 200
   },
   "right": {
     "id": "cdd68d12648e24d6",
@@ -160,47 +160,50 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "omnisearch:Omnisearch": false
+      "omnisearch:Omnisearch": false,
+      "pdf-plus:PDF++: Toggle auto-copy": false,
+      "pdf-plus:PDF++: Toggle auto-focus": false,
+      "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "f03cffc225b01582",
+  "active": "c828308928824a43",
   "lastOpenFiles": [
-    "2013zeiler_understandingcnns.md",
-    "pdf/2024wang_yolov10.pdf",
-    "pdf/2024wang_yolov9.pdf",
-    "pdf/2023reis_yolov8.pdf",
-    "pdf/2023diao_pqindex.pdf",
-    "pdf/2022wang_yolov7.pdf",
-    "pdf/2022li_yolov6.pdf",
-    "pdf/2020tam_fiedler.pdf",
-    "pdf/2020foret_sharpness-awareness-maximization.pdf",
-    "pdf/2020bovhkobskiy_yolov4.pdf",
-    "pdf/2019zhou_omniscale-net.pdf",
-    "2024wang_yolov10.md",
-    "2024wang_yolov9.md",
-    "2023reis_yolov8.md",
-    "2023diao_pqindex.md",
-    "2022wang_yolov7.md",
-    "2022li_yolov6.md",
-    "2020tam_fiedler.md",
-    "2020foret_sharpness-awareness-maximization.md",
-    "2020bovhkobskiy_yolov4.md",
-    "2019zhou_omniscale-net.md",
-    "2019berthelot_remixmatch.md",
-    "2019berthelot_mixmatch.md",
-    "2018redmon_yolov3.md",
-    "2018kingma_glow.md",
-    "2018frankle_lotteryticket.md",
-    "2017zhu_cyclegan.md",
+    "2010zeiler_deconvnets.md",
+    "pdf/2016uria_nade.pdf",
     "2016uria_nade.md",
-    "2016selvaraju_gradcam.md",
-    "2016redmon_yolov2.md",
-    "2016oord_pixel-rnn.md",
-    "2016oord_pixel-cnn.md",
     "2016dinh_realnvp.md",
-    "2016ba_layer-norm.md",
-    "2015zhou_cam.md",
+    "pdf/2016dinh_realnvp.pdf",
     "2015rezende_normalizing-flow.md",
+    "2014dinh_nice.md",
+    "pdf/2015rezende_normalizing-flow.pdf",
+    "pdf/2014dinh_nice.pdf",
+    "2020dosovitskiy_vit.md",
+    "pdf/2020dosovitskiy_vit.pdf",
+    "2019radford_gpt2.md",
+    "pdf/2019radford_gpt2.pdf",
+    "2018devlin_bert.md",
+    "2018radford_gpt.md",
+    "pdf/2018devlin_bert.pdf",
+    "pdf/2017vaswani_attention-transformer.pdf",
+    "2017vaswani_attention-transformer.md",
+    "pdf/2018radford_gpt.pdf",
+    "2020brown_gpt3.md",
+    "pdf/2020brown_gpt3.pdf",
+    "2023diao_pqindex.md",
+    "2014cho_neural-machine-translation.md",
+    "2015radford_dcgan.md",
+    "2021donnelly_deformable-protopnet.md",
+    "2019chen_protopnet.md",
+    "2020rymarczyk_protopshare.md",
+    "2014goodfellow_gan.md",
+    "1997hochreiter_lstm.md",
+    "1990werbos_backprop-thru-time.md",
+    "1986rumelhard_backprop.md",
+    "1998lecun_lenet.md",
+    "2013kingma_vae.md",
+    "2019berthelot_remixmatch.md",
+    "2016selvaraju_gradcam.md",
+    "2018kingma_glow.md",
     "img/2010zeiler_results.png"
   ]
 }
