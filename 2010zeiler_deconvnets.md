@@ -1,4 +1,7 @@
+#architecture #cnn
+[[1998lecun_lenet]]
 ## Background 
+
 
    CNNs are not very interpretable as in we don't know what these features represent in latent space. We would like to visualize them in image/pixel space at all layers to see how they evolve from simple to more complex features. 
 

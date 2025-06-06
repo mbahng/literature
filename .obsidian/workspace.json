@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "eb5d1b58dac00f86",
+        "id": "90308aa28fadd15b",
         "type": "tabs",
         "children": [
           {
-            "id": "20782b490da7e1e8",
+            "id": "5eed1690bc2a60f0",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
             }
           }
         ]
@@ -90,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for README"
             }
           },
           {
@@ -148,7 +153,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -161,32 +167,43 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "20782b490da7e1e8",
+  "active": "5eed1690bc2a60f0",
   "lastOpenFiles": [
+    "pdf/2024willard_protopnext.pdf",
+    "README.md",
+    "2015he_resnet.md",
+    "2017vaswani_attention.md",
+    "2010zeiler_deconvnets.md",
+    "2015long_fcnn.md",
+    "2015ronneberger_unet.md",
+    "2014szegedy_googlenet.md",
+    "2014simonyan_vgg.md",
+    "2013zeiler_understandingcnns.md",
+    "2012krizhevsky_alexnet.md",
+    "2011zeiler_adaptive_deconvnets.md",
+    "2009deng_imagenet.md",
+    "1998lecun_lenet.md",
+    "2018li_prototypeautoencoder.md",
+    "2024willard_protopnext.md",
+    "2021nauta_prototree.md",
+    "2019chen_protopnet.md",
+    "pdf/2015long_fcnn.pdf",
+    "pdf/1998lecun_lenet.pdf",
+    "pdf/2015ronneberger_unet.pdf",
+    "pdf/2014simonyan_vgg.pdf",
+    "pdf/2013zeiler_understandingcnns.pdf",
+    "pdf/2011zeiler_adaptive_deconvnets.pdf",
+    "pdf",
+    "pdf/2010zeiler_deconvnets.pdf",
     "upsampling/2015ronneberger_unet.md",
     "prototype_nets/2024willard_protopnext.pdf",
     "prototype_nets/2024willard_protopnext.md",
-    "prototype_nets/2021nauta_prototree.pdf",
     "prototype_nets/2021nauta_prototree.md",
-    "prototype_nets/2019chen_protopnet.pdf",
     "prototype_nets/2019chen_protopnet.md",
-    "prototype_nets/2018li_prototypeautoencoder.pdf",
     "prototype_nets/2018li_prototypeautoencoder.md",
-    "prototype_nets",
     "img/2010zeiler_results.png",
-    "img",
-    "few_shot/2006li_oneshot.pdf",
-    "few_shot",
-    "dataset",
-    "compression",
-    "2015ronneberger_unet.md",
-    "2015long_fcnn.md",
-    "2013zeiler_understandingcnns.md",
-    "2011zeiler_adaptive_deconvnets.md",
-    "2010zeiler_deconvnets.md",
     "upsampling/prototype_nets/2018li_prototypeautoencoder.md",
     "upsampling/prototype_nets/2024willard_protopnext.md",
-    "upsampling/prototype_nets/2021nauta_prototree.md",
-    "upsampling/prototype_nets/2019chen_protopnet.md"
+    "upsampling/prototype_nets/2021nauta_prototree.md"
   ]
 }

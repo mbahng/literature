@@ -1,30 +1,31 @@
-## Background. 
+#interpretable 
+[[2018li_prototypeautoencoder]]
 
-   
+# Background. 
 
-## Contribution. 
+# Contribution. 
 
-   This is the first implementation of the protopnet, which provides an interpretable alternative to black box neural nets. 
+This is the first implementation of the protopnet, which provides an interpretable alternative to black box neural nets. 
 
 ## Model Inference. 
 
-   1. A convolutional backbone that maps the original image to a latent space $f: \mathbb{R}^{224 \times 224 \times 3} \to \mathbb{R}^{D \times 7 \times 7}$. We can think of each image as being embedded as a set of $7 \times 7 = 49$ vectors in a $D$-dimensional space, called patches.
+A convolutional backbone that maps the original image to a latent space $f: \mathbb{R}^{224 \times 224 \times 3} \to \mathbb{R}^{D \times 7 \times 7}$. We can think of each image as being embedded as a set of $7 \times 7 = 49$ vectors in a $D$-dimensional space, called patches.
 
-   2. Assuming that there are $K$ classes. The network is built so that for every class, there are $P$ prototypes of shape $D \times 1 \times 1$. So during inference, it takes the image, embeds it to shape $(D, 7, 7)$ and for each of the $KP$ total prototypes, we compare each prototype to each patch (a total of $49KP$ comparisons) and find the prototype that has maximum similarity (either negative L2 distance or cosine similarity). 
+Assuming that there are $K$ classes. The network is built so that for every class, there are $P$ prototypes of shape $D \times 1 \times 1$. So during inference, it takes the image, embeds it to shape $(D, 7, 7)$ and for each of the $KP$ total prototypes, we compare each prototype to each patch (a total of $49KP$ comparisons) and find the prototype that has maximum similarity (either negative L2 distance or cosine similarity). 
 
-   3. With this collection of all similarity scores, we use a fully connected layer to predict. the logits of the proper class. 
+With this collection of all similarity scores, we use a fully connected layer to predict. the logits of the proper class. 
 
 ## Training. 
 
-   1. You are essentially training the backbone, prototype, and FC weights. 
+You are essentially training the backbone, prototype, and FC weights. 
 
-   2. There is a warm, joint, last (FC) layer training epoch. 
+There is a warm, joint, last (FC) layer training epoch. 
 
-   3. There is also a projection/push epoch where the prototypes are projected onto the nearest patch of a given class. This is so that we can absolutely match a prototype with a patch in the latent space, which will correspond to a heatmap of the original image, giving us the diagrams in the paper. 
+There is also a projection/push epoch where the prototypes are projected onto the nearest patch of a given class. This is so that we can absolutely match a prototype with a patch in the latent space, which will correspond to a heatmap of the original image, giving us the diagrams in the paper. 
 
-   4. Dataset is CUB only. 
+Dataset is CUB only. 
 
-   5. Loss is custom, with CE loss for the classifier along with ones for prototypes. Cluster loss tries to minimize the distances between each prototype and its nearest patch (for high confidence). Separation loss tries to maximize distances between a prototype of one class and all other prototypes of different classes, since different birds will have different features. 
+Loss is custom, with CE loss for the classifier along with ones for prototypes. Cluster loss tries to minimize the distances between each prototype and its nearest patch (for high confidence). Separation loss tries to maximize distances between a prototype of one class and all other prototypes of different classes, since different birds will have different features. 
 
 ## Results
 
